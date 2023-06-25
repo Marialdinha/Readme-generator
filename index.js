@@ -4,6 +4,7 @@ const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 const { error } = require('console');
 
+
 // TODO: Create an array of questions for user input
 const questions = [
   {
@@ -20,6 +21,18 @@ const questions = [
   type: 'input',
   message: 'Give a description of you project',
   name: 'description',
+},
+{
+  type: 'list',
+  message: "Choose your license:",
+  choices: ["MIT", "Apache"],
+  name: 'license',
+}
+{
+  type: 'list',
+  message: "Choose your license:",
+  choices: ["MIT", "Apache"],
+  name: 'license',
 }
 ];
 
@@ -39,35 +52,16 @@ function init() {
 
 return inquirer.prompt(questions)
     .then((answers) => {
+      console.log(answers)
       const mark = generateMarkdown(answers)
       writeToFile("README.md",mark)
       console.log(mark)
-      return answers
+      // return answers
     })
     .catch((error) => {
       console.log(error)
     })
-
-//     inquirer
-//   .prompt([
-//     {
-//       type: 'password',
-//       message: 'Enter a password',
-//       name: 'password1',
-//     },
-//     {
-//       type: 'password',
-//       message: 'Enter a masked password',
-//       name: 'password2',
-//       mask: '*',
-//     },
-//   ])
-//   .then((answers) => console.log(JSON.stringify(answers, null, '  ')));
-}
+  }
 
 // Function call to initialize app
 init();
-
-
-//  import current directory
-// import { cwd } from 'node:process';

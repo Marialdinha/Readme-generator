@@ -32,3 +32,26 @@ function declareHelloAgain(x,y,z) {
 // Function arguments give parameters their values
 // Here the parameter x is given the value 7 when the function is called
 declareHelloAgain(7, "Hello", true);
+
+
+// INQUIRER PROMPT
+//     inquirer
+//   .prompt([
+//     {
+//       type: 'password',
+//       message: 'Enter a password',
+//       name: 'password1',
+//     },
+//     {
+//       type: 'password',
+//       message: 'Enter a masked password',
+//       name: 'password2',
+//       mask: '*',
+//     },
+//   ])
+//   .then((answers) => console.log(JSON.stringify(answers, null, '  ')));
+
+
+
+//  import current directory
+// import { cwd } from 'node:process';
