@@ -1,6 +1,6 @@
 
 
-  # project name 
+  # README Generator 
 
   ## Table of Contents
   - [Description](#Description)
@@ -13,26 +13,26 @@
   - [Questions](#Questions)
  
   ## Description
-  description
+  This project asks the user a series of questions on the command line and creates a Markdown README file with the answers.
 
   ## License
-  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Installation
-  installations instructions
+  This program requires no installation.
 
   ## Usage
-  usage
+  The user just runs the node command: node index.js 
 
   ## Run
-  how to run
+  Node index.js
 
   ## Contributed
-  nobody contributed
+  N/A
 
   ## Test
-  no need to test
+  N/A
 
   ## Questions
-  Repoistoy link: https://github.com/marialdinha/readme-generator <br /> 
+  Repoistoy link: https://github.com/Marialdinha/Readme-generator <br /> 
   You can contact me via email: marialda@bellsouth.net
