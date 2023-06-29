@@ -23,7 +23,32 @@ const questions = [
     choices: ["MIT", "Apache","Mozilla"],
     name: 'license',
   },
-  {
+{
+  type: 'input',
+  message: 'Please, enter installations instructions',
+  name: 'installation',
+},
+{
+  type: 'input',
+  message: 'Please, enter usage',
+  name: 'usage',
+},
+{
+  type: 'input',
+  message: 'Please, enter how to run your program',
+  name: 'runProg',
+},
+{
+  type: 'input',
+  message: 'Please, enter who contributed to your program',
+  name: 'contributed',
+},
+{
+  type: 'input',
+  message: 'Please, enter how to test your program',
+  name: 'test',
+},
+{
   type: 'input',
   message: 'What is your GitHub user name?',
   name: 'userName',
@@ -32,11 +57,6 @@ const questions = [
   type: 'input',
   message: 'What is your repository name in GitHub?',
   name: 'repository',
-},
-{
-  type: 'input',
-  message: 'Please, enter installations instructions',
-  name: 'installation',
 },
 {
   type: 'input',

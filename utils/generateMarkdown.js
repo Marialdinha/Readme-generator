@@ -25,9 +25,13 @@ function generateMarkdown(answers) {
   # ${answers.projectName} 
 
   ## Table of Contents
-  - [Project Description](#Description)
+  - [Description](#Description)
   - [License](#License)
-  - [Installation Instructions](#Installation)
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [How to Run](#Run)
+  - [Who Contributed](#Contributed)
+  - [Test](#Test)
   - [Questions](#Questions)
  
   ## Description
@@ -39,8 +43,20 @@ function generateMarkdown(answers) {
   ## Installation
   ${answers.installation}
 
+  ## Usage
+  ${answers.usage}
+
+  ## Run
+  ${answers.runProg}
+
+  ## Contributed
+  ${answers.contributed}
+
+  ## Test
+  ${answers.test}
+
   ## Questions
-  Repoistoy link: https://github.com/${answers.userName}/${answers.repository}
+  Repoistoy link: https://github.com/${answers.userName}/${answers.repository} <br /> 
   You can contact me via email: ${answers.email}
 `;
 }
